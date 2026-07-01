@@ -27,8 +27,12 @@ A highly differentiated, physics-constrained AI architecture explicitly designed
 - **Physics-Informed Recursive Upscaling:** Generates meteorologically valid 15-min and 7.5-min interval frames from a 30-min baseline.
 - **Native Scientific Data Processing:** Natively handles `.nc` and `.h5` files, transforming raw digital counts into precise Brightness Temperatures.
 - **Event-Augmented Motion Tracking:** Anticipates non-linear cloud motion (like a cyclone accelerating).
-- **Scientific Validation Engine & Error Maps:** Real-time calculation of quantitative metrics (PSNR, SSIM, FSIM, MSE).
-- **Interactive WebGL Visualizer Dashboard:** A high-performance web dashboard mimicking the official MOSDAC platform.
+- **Scientific Validation Engine & Error Maps:** Real-time calculation of quantitative metrics (PSNR, SSIM, FSIM, MSE) with automatic qualitative assessment.
+- **Interactive Research Dashboard (MOSDAC UI Clone):** 
+  - **Slider Comparison Mode:** Draggable overlay comparing AI predictions directly against Ground Truth.
+  - **MOSDAC Timeline Player:** Synchronized time-lapse sequence viewer mimicking official ISRO tools.
+  - **Differential Heatmaps:** High-contrast Thermal Gradient analysis (Sobel edge detection).
+  - **Native `.h5` & PNG Export:** Export raw interpolated tensors natively for downstream meteorological processing.
 
 ---
 
@@ -49,13 +53,7 @@ graph TD
 
 ---
 
-### 5) Open Source & Licensing
-
-- **MIT License:** We are releasing this software under the MIT License, ensuring it remains fully open-source. This allows for unrestricted academic, commercial, and governmental use, empowering global meteorological agencies to freely adopt, modify, and integrate our physics-informed AI models into their existing pipelines without licensing friction.
-
----
-
-### 6) Technologies to be Used in the Solution
+### 5) Technologies to be Used in the Solution
 
 **Frontend Layer (Visualization):**
 - **React.js & Vite:** For a highly responsive, fast web interface.
