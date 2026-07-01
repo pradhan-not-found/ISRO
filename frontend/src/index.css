@@ -112,7 +112,7 @@
     @apply border-border;
   }
   html {
-    font-family: "Helvetica Trace", "Helvetica Neue", Helvetica, Arial, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: "Inter", "Helvetica Neue", Helvetica, Arial, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -123,7 +123,7 @@
     transition: background-color 200ms ease, color 200ms ease;
   }
   h1, h2, h3, h4, h5, h6 {
-    font-family: "Helvetica Trace", "Helvetica Neue", Helvetica, Arial, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: "Inter", "Helvetica Neue", Helvetica, Arial, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     letter-spacing: -0.02em;
     font-weight: 600;
   }
@@ -163,7 +163,7 @@
     border-color: var(--app-hairline);
   }
   .font-display {
-    font-family: "Helvetica Trace", "Helvetica Neue", Helvetica, Arial, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: "Inter", "Helvetica Neue", Helvetica, Arial, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   }
   
   .app-hero {
