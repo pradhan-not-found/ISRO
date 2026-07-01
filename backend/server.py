@@ -3,7 +3,11 @@ import os
 import traceback
 from flask_cors import CORS
 import torch
-import torch_directml
+try:
+    import torch_directml
+    device_name = torch_directml.device()
+except ImportError:
+    device_name = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 import cv2
 import numpy as np
 import io
@@ -20,7 +24,7 @@ app = Flask(__name__)
 CORS(app) 
 
 print("[*] Booting AI Engine...")
-device = torch_directml.device()
+device = device_name
 model = SatelliteInterpolatorUNet().to(device)
 model.load_state_dict(torch.load("models/satellite_interpolator.pth", map_location=device))
 model.eval()
